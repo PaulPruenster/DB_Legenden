@@ -1,0 +1,10 @@
+Der klassiker. Bei der 3 Schichten Architektur wird eine Datenbank unterteilt in:
+
+View externe Schicht:
+Die Daten die die Benutzer sehen und abfragen können. Mit views kann man verschiedenen Benutzern Daten verbergen.
+
+Konzeptionelle logische Schicht:
+Ist für das verarbeiten von daten zuständig.
+
+Interne physische Schicht: 
+Ist für das laden und speichern von Daten zuständig.

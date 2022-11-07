@@ -1,0 +1,9 @@
+Folgende Aussagen sind nicht realisierbar bzw werden in Programmcode gelößt:
+
+Dabei muss sichergestellt werden, dass das Lieferdatum mindestens einen Tag nach dem Bestelldatum liegt.
+
+Bevor eine Bestellung akzeptiert wird, muss überprüft werden, ob die angegebene Liefer- und
+Rechnungsadresse auch wirklich existieren.
+
+Ein Kunde wird immer dann gelöscht, wenn es im System keine Bestellungen dieses Kunden mehr gibt.
+Eine Bestellung wird zwei Jahre nach erfolgter Lieferung gelöscht.

@@ -1,0 +1,2 @@
+"name","setting"
+"VERSION","PostgreSQL 13.4 (Debian 13.4-4.pgdg110+1)"

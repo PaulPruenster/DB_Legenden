@@ -1,0 +1,7 @@
+atomicity, consistency, isolation und durability. 
+Atomarität, Konsistenz, Isolation und Dauerhaftigkeit
+
+Atomarität: Transaktionen sind erst gültig wenn sie abgeschlossen sind und können im Falle eines Fehlers rückgängig gemacht werden.
+Konsistenz: nach der Transaktion sind alle Integritätsbedingungen erfüllt, die Datenbank ist also wie vor der Transaktion konsistent.
+Isolation: Transaktionen können sich nicht gegenseitig beeinflussen. Recourcen werden gesperrt.
+Dauerhaftigkeit: Garantiert dass alle Daten gespeichert sind auch wenn das Datenbankystem abstürtzt. Die daten sollen also auf die Festplatte geschrieben sein.

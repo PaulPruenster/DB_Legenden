@@ -1,0 +1,11 @@
+1. Datenbanken könne mit mehreren Benutzern gleichzeitig leicht umgehen, man kann z.B.
+  Transaktionen ausführen und so Tabellen sperren wärend man einen Eintrag verändert.
+
+2. Mit Datenbanken kann man doppelte also redundante einträge leich verhindern was in einer
+  Datei schwierig wäre ohne alles zu durchsuchen.
+
+3. Man kann Datenbanken leichter skalieren als eine oder mehrere Dateien.
+
+4. Datenbanksysteme sind schneller im verarbeiten, suchen und eintragen von Daten.
+
+5. Datenbanken sind zuverlässigere Systeme als eine Datei. Daten werden verschlüsselt gespeichert,
