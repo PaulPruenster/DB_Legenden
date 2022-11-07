@@ -1,22 +1,43 @@
-#!/bin/sh
+#!/bin/bash
 
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 1 ]; then                                                       # check if there is 1 argument
   echo "Usage: $0 <folder>" >&2
-  exit 1
+  exit 1                                                                      # if not exit program
 fi
+folder=$1
 
-cd $1
-python3 ../check-files.py required-files.yml
+if [[ "${folder:0-4}" =~ ".zip"$ ]] ; then                                    # check if last 4 chars are ".zip"
+  folder=${folder%????}                                                       # remove last 4 character
+  echo "Checking $folder.zip ..."
+  python3 check-files.py --zip-file $folder.zip ./$folder/required-files.yml  # check-files for ***.zip with check-files.py
+  exit 1                                                                      # close programm
+elif [[ "${folder:0-1}" =~ '/'$ ]] ; then                                       # check if last char is '/'
+  folder=${folder%?}                                                          # remove last char
 
-#cd ..
-#if [ $?  -eq 0 ]; then
-#  while true; do
-#      read -p "Do you wish to zip the folder? " yn
-#      case $yn in
-#          [Yy]* ) zip -r $1.zip $1; break;;
-#          [Nn]* ) exit;;
-#          * ) echo "Please answer yes or no.";;
-#      esac
-#  done
-#fi
+fi
+echo "Checking $folder ..."
 
+cd $folder                                                                    # change to folder
+python3 ../check-files.py required-files.yml                                  # check files from folder
+
+echo
+while true; do                                                                # ask as long as first char is not nN or yY
+    read -p "Do you wish to zip the folder $folder[y/n]?" yn                  # ask if ***.zip should be generated
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+echo
+if [ -f ../$folder".zip" ]; then                                              # check if ***.zip already exist
+  echo -e "deleting $folder.zip ...\n"
+  rm "../$folder.zip"                                                         # delete if already exists 
+fi
+echo "creating $folder.zip..."
+zip -r ../$folder . -x required-files.yml                                     # creat zip without required-files.yml
+cd ..                                                                         # return from folder
+echo -e "\nChecking $folder.zip ..."
+
+python3 check-files.py --zip-file $folder.zip ./$folder/required-files.yml    # check new ***.zip with check-files.py
+exit 1
