@@ -1,0 +1,4 @@
+ar.Name,"ar.ArtistId"
+Foo Fighters,"84"
+
+1
