@@ -1,0 +1,11 @@
+rho Name ← Title (
+	sigma titleInAlbum > 2
+		(gamma CustomerId, LastName, AlbumId, Title;
+			count(AlbumId) → titleInAlbum
+				(Customer
+						natural join (
+							sigma InvoiceDate > '2010-01-01' Invoice
+						)
+				natural join InvoiceParts
+				natural join Track
+				natural join Album)))

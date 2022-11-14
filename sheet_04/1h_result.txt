@@ -1,0 +1,5 @@
+"Customer.CustomerId","Customer.LastName","Track.AlbumId","Album.Name","null.titleInAlbum"
+"10","Martins","238","The Best Of 1980-1990","3"
+"14","Philips","190","The Best Of R.E.M.: The IRS Years ","4"
+"20","Miller","194","By The Way","3"
+"26","Cunningham","239","War","3"
