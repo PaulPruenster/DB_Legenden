@@ -1,0 +1,7 @@
+pi LastName, FirstName, Track.Name, Artist.Name, Album.Title
+(sigma LastName < 'C' Customer
+join Customer.CustomerId = Invoice.CustomerId Invoice
+join Invoice.InvoiceId = InvoiceParts.InvoiceId InvoiceParts
+join InvoiceParts.TrackId = Track.TrackId Track
+join Track.AlbumId = Album.AlbumId Album
+join Album.ArtistId = Artist.ArtistId Artist)
