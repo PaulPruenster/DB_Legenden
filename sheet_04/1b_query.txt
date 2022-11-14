@@ -1,0 +1,5 @@
+bills = sigma '2009-11-01' <= Invoice.InvoiceDate ∧ Invoice.InvoiceDate <= '2009-11-30' Invoice
+ 
+customerJoinInvoice = Customer join Customer.CustomerId = Invoice.CustomerId bills
+
+pi Invoice.CustomerId, InvoiceDate, Total, LastName customerJoinInvoice
