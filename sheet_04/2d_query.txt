@@ -1,0 +1,6 @@
+pi FirstName, LastName, Track.Name, InvoiceDate
+(Customer join
+(sigma Invoice.InvoiceDate  '2010-01-01' Invoice) join
+(InvoiceParts join
+(Track join (Track.GenreId = Genre.GenreId) (
+sigma Genre.Name = 'Rock' Genre))))
