@@ -1,0 +1,3 @@
+pi TrackId, Name, UnitPrice (
+sigma PlaylistId != 5 (
+Track left join (sigma PlaylistId = 5 (PlaylistContent))))
