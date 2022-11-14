@@ -1,0 +1,1 @@
+pi pl.Name, t.Name ( ( rho pl Playlist  join plc.PlaylistId = pl.PlaylistId rho plc PlaylistContent )  join t.TrackId = plc.TrackId rho t Track )
