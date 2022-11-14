@@ -1,0 +1,12 @@
+A = pi ar.Name, ar.ArtistId, Bytes, Miliseconds γ ar.Name, ar.ArtistId;
+AVG(t.Bytes)→Bytes, 
+AVG(t.Miliseconds)→Miliseconds 
+( 
+	(
+		rho ar Artist join ar.ArtistId = al.ArtistId rho al Album
+	) 
+	join t.AlbumId = al.AlbumId rho t Track
+)
+
+B = sigma Bytes < 8500000 ∧ Miliseconds > 250000 A
+π ar.Name, ar.ArtistId B

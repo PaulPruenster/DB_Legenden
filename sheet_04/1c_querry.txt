@@ -1,1 +1,0 @@
-( Track join Track.GenreId = Genre.GenreId Genre ) join InvoiceParts.TrackId = Track.TrackId InvoiceParts
