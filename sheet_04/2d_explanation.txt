@@ -1,0 +1,7 @@
+Ich merke einen Unterschied, da die 2b mit der DBS mit Einträgen abstürzt. Jedoch die 2d wird innerhalb
+von Millisekunden abgearbeitet. Da wenn man im vorhinein alle x-Produkte erstellt werden es zuviele Elemente,
+wenn man jedoch zuerst die Anzahl an Elemente durch sigma reduziert werden es weniger x-Produkte dadurch stürzt es
+nicht ab.
+
+AxBxC
+Ergebnis von AxB (A mal B Elemente) werden mit allen Elementen von C nochmal verbunden.
