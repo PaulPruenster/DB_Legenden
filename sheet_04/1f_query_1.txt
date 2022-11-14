@@ -1,0 +1,3 @@
+ids = (pi TrackId (Track)) - pi TrackId (sigma PlaylistId = 5 (PlaylistContent))
+
+pi  TrackId, Name, UnitPrice (ids join Track)
