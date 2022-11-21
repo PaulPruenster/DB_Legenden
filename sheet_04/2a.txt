@@ -1,12 +1,12 @@
-		Relation 		|	Anzahl Tupel	|   Alg
-Artist				| 5				| pi Anzahl gamma ;COUNT(*) -> Anzahl Artist
-Album					| 11				| pi Anzahl gamma ;COUNT(*) -> Anzahl Album
-Track					| 147				| pi Anzahl gamma ;COUNT(*) -> Anzahl Track
-Rock Tracks			| 114				| pi Anzahl γ ; COUNT(*) -> Anzahl sigma g.Name = 'Rock' ( rho t Track join g.GenreId = t.GenreId rho g Genre )
-Playlist				| 3				| pi Anzahl gamma ; COUNT(*)→Anzahl Playlist
-PlaylistContent			| 379				| pi Anzahl gamma ; COUNT(*)→Anzahl PlaylistContent
-Genre					| 9				| pi Anzahl gamma ; COUNT(*)→Anzahl Genre
-Invoice				| 32				| pi Anzahl gamma ; COUNT(*)→Anzahl Invoice
+		Relation 			|	Anzahl Tupel	|   Alg
+Artist						| 5					| pi Anzahl gamma ; COUNT(*) -> Anzahl Artist
+Album						| 11				| pi Anzahl gamma ; COUNT(*) -> Anzahl Album
+Track						| 147				| pi Anzahl gamma ; COUNT(*) -> Anzahl Track
+Rock Tracks					| 114				| pi Anzahl gamma ; COUNT(*) -> Anzahl sigma g.Name = 'Rock' ( rho t Track join g.GenreId = t.GenreId rho g Genre )
+Playlist					| 3					| pi Anzahl gamma ; COUNT(*)→Anzahl Playlist
+PlaylistContent				| 379				| pi Anzahl gamma ; COUNT(*)→Anzahl PlaylistContent
+Genre						| 9					| pi Anzahl gamma ; COUNT(*)→Anzahl Genre
+Invoice						| 32				| pi Anzahl gamma ; COUNT(*)→Anzahl Invoice
 Invoice after 2010-01-01	| 25				| pi Anzahl gamma ; COUNT(*)→Anzahl sigma InvoiceDate > '2010-01-01' Invoice
-InvoiceParts			| 99				| pi Anzahl gamma ; COUNT(*)→Anzahl InvoiceParts
-Customer				| 27				| pi Anzahl gamma ; COUNT(*)→Anzahl Customer
+InvoiceParts				| 99				| pi Anzahl gamma ; COUNT(*)→Anzahl InvoiceParts
+Customer					| 27				| pi Anzahl gamma ; COUNT(*)→Anzahl Customer
