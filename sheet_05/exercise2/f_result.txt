@@ -1,0 +1,2 @@
+customer_name,"staff_name","total_amount"
+JUNE CARROLL,"Mike Hillyer",126.74
