@@ -1,0 +1,11 @@
+Schlüsselkanidaten: [ABD, EBD]
+
+(BD)+ -> BD
+[ABD]+ -> BDACE	yes
+[CBD]+ -> BD 	no
+[EBD]+ -> BDEAC yes
+
+Normalform: 
+ABD ist ein Superkey deshalb in BCNF
+
+

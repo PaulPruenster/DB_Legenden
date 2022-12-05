@@ -1,0 +1,7 @@
+Schlüsselkanidaten: [A, CE, BC]
+
+[A]+  -> ABCED	yes
+[CE]+ -> CEBDA	yes
+[BC]+ -> BCADE	yes
+
+Normalform: 3. NF
