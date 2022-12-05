@@ -4,4 +4,4 @@ Schlüsselkanidaten: [A, CE, BC]
 [CE]+ -> CEBDA	yes
 [BC]+ -> BCADE	yes
 
-Normalform: 3. NF
+Normalform: 3. NF, weil es nicht transitiv ist

@@ -6,6 +6,6 @@ Schlüsselkanidaten: [ABD, EBD]
 [EBD]+ -> BDEAC yes
 
 Normalform: 
-in 3. NF
+in 3. NF, weil es nicht transitiv ist
 
 
