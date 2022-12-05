@@ -6,6 +6,6 @@ Schlüsselkanidaten: [ABD, EBD]
 [EBD]+ -> BDEAC yes
 
 Normalform: 
-ABD ist ein Superkey deshalb in BCNF
+in 3. NF
 
 
