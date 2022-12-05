@@ -16,11 +16,11 @@ above550(followed_person_id) AS
 (
 	Select followed_person_id, count(following)
 	FROM followers
-	Group BY followed_person_id
+	Group BY followed_person_id, steps
 	HAVING count(following) > 550
 )
 SELECT Distinct f.followed_person_id, f.firstname, f.lastname,  f.steps, count(f.following)
         FROM followers as f
-	JOIN above550 ON above550.followed_person_id=f.followed_person_id
+	Inner JOIN above550 ON above550.followed_person_id=f.followed_person_id
 		Group BY f.followed_person_id, f.firstname, f.lastname, f.steps
 		order by f.followed_person_id, f.steps
