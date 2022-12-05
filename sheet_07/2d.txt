@@ -1,0 +1,7 @@
+Schlüsselkanidaten: [ACDE, BCDE]
+
+(DE)+ -> DE
+[BCDE]+ -> BCADE	yes
+[ACDE]+ -> ACBDE	yes
+
+Normalform: 3NF erfüllt aber keine Bedingung von BCNF

@@ -1,0 +1,35 @@
+R:={ABCDE}
+
+A->BCDE
+BC->DE
+C->AD
+AB->BE
+
+Kandidatenschlüssel: [A, C]
+
+Linksreduktion:
+
+A -> BCDE
+C -> DE
+C -> AD
+A -> BE
+
+Rechtsreduktion:
+
+A -> C
+C -> ∅
+C -> AD
+A -> BE
+
+alpha -> ∅ entfernen:
+
+A -> C
+C -> AD
+A -> BE
+
+zusammenfassen:
+
+C -> AD
+A -> BCE
+
+

@@ -4,7 +4,7 @@ select f.title, c."name" as category_name, sum(p.amount) as total_earnings, avg(
  join payment p on r.rental_id = p.rental_id
  join film_category fc on fc.film_id = f.film_id 
  join category c on c.category_id = fc.category_id 
-group by f.title, c."name"  
+group by f.title, c."name"
 
 union all 
 

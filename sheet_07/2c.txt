@@ -1,0 +1,7 @@
+Schlüsselkanidaten: [D]
+
+(D)+  -> DCEAB
+
+Normalform: Ist nicht in der 3. NF, da der Schlüssel D transitiv ist: bedeutet
+man kommt von D nicht direkt auf A-D sondern zu AB z.b. nur über C
+			
