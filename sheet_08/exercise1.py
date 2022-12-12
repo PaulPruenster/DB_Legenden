@@ -106,8 +106,6 @@ def get_rental_report():
         ORDER BY c.name ASC
         """
 
-    #query = sql.SQL(query_str.format(from_date=sql.Identifier(from_date), to_date=sql.Identifier(to_date)))
-
     res = execute_query(query_str.format(from_date, to_date))
     if res:
         print_result(res[0], res[1])
@@ -120,7 +118,7 @@ def get_rental_report_function():
     if not validate(to_date):
         return
 
-    query_str = "SELECT * FROM rental_report_function('2005-05-01', '2005-05-30');"
+    query_str = "SELECT * FROM rental_report_function('{0}', '{1}');"
     res = execute_query(query_str.format(from_date, to_date))
     if res:
         print_result(res[0], res[1])
@@ -135,7 +133,6 @@ while True:
     elif command == 'rental_report_function':
         get_rental_report_function()
     elif command != '':
-        # TODO sanitize
         res = execute_query(command)
         if res:
             print_result(res[0], res[1])
