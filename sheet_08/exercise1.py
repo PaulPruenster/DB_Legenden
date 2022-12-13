@@ -1,4 +1,5 @@
 import psycopg2
+import os
 from psycopg2 import sql
 from datetime import datetime
 
@@ -128,6 +129,8 @@ while True:
     command = input()
     if command == 'q':
         break
+    elif command == 'sl':
+        os.system('sl')
     elif command == 'rental_report':
         get_rental_report()
     elif command == 'rental_report_function':
