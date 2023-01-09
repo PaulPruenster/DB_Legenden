@@ -1,0 +1,28 @@
+---
+Aufgabe 1a:
+    - 1a.pdf
+Aufgabe 1b:
+    - 1b.pdf
+Aufgabe 1c:
+    - 1c.pdf
+Aufgabe 2a:
+    - 2a_create_db.sql
+    - 2a_create_table_akas.sql
+    - 2a_create_table_ratings.sql
+    - 2a_query_result.csv
+Aufgabe 2b:
+    - 2b_time.txt
+    - 2b_explain_result.txt
+    - 2b_explain_description.txt
+Aufgabe 2c:
+    - 2c_create_index.sql
+    - 2c_time.txt
+    - 2c_explain_result.txt
+    - 2c_explain_description.txt
+Aufgabe 2d:
+    - 2d_create_compound_index.sql
+    - 2d_interpretation.txt
+Aufgabe 2e:
+    - 2e_answer_1.txt
+    - 2e_answer_2.txt
+    - 2e_answer_3.txt
