@@ -1,0 +1,6 @@
+Bei der Bewertung der aktuellen Indizierungsstrategie für eine Datenbank gibt es mehrere Ansichten, die vom Statistics Collector in PostgreSQL bereitgestellt werden und nützlich sein können. Einige der Ansichten, die verwendet werden können, sind:
+
+    pg_stat_all_indexes : Diese Ansicht liefert Statistiken über alle Indizes in der Datenbank, einschließlich Indexgröße, Anzahl der Scans und Anzahl der abgerufenen Zeilen.
+    pg_stat_user_tables : Diese Ansicht liefert Statistiken über alle benutzerdefinierten Tabellen in der Datenbank, einschließlich der Anzahl der aktiven und toten Zeilen sowie der Anzahl der Überprüfungen und Aktualisierungen.
+    pg_stat_user_indexes : Diese Ansicht bietet Statistiken über alle benutzerdefinierten Indizes in der Datenbank, einschließlich der Anzahl der Scans, der Anzahl der abgerufenen Zeilen und der Anzahl der Aktualisierungen.
+    pg_statio_user_indexes : Diese Ansicht bietet Statistiken über die E/A-Nutzung aller benutzerdefinierten Indizes in der Datenbank, einschließlich der Anzahl der gelesenen und geschriebenen Plattenblöcke.
